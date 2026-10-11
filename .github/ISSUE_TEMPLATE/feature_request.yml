@@ -1,0 +1,27 @@
+name: 功能建议
+description: 希望新增或改进的功能
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: 这是公开仓库，请不要填写个人信息。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 想解决什么问题
+      placeholder: 例如：每次给全班发积分都要一个个点，课前准备很费时间
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: 希望怎么做
+  - type: dropdown
+    id: role
+    attributes:
+      label: 你的身份
+      options:
+        - 学员
+        - 老师
+        - 机构管理员
+        - 其他
